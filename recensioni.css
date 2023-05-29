@@ -1,0 +1,131 @@
+#intestazione{
+    height: 70% !important;
+}
+
+.containerForm{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(233, 233, 233); 
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 120%;
+}
+
+label{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+
+.containerForm input[type='text'] {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 2%;
+}
+
+#review{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 2%;
+}
+
+
+.containerForm input[type = "submit"] {
+    
+    text-align: center;
+    border: solid rgb(100, 100, 100);
+    padding: 2%;
+    color: rgb(61, 61, 61);
+    cursor: pointer;
+
+    font-weight: bold;
+    width: 30%;
+    
+}
+
+
+.containerForm input[type = "submit"]:hover {
+    border: solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+}
+
+.visible {
+    display: inline !important;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.no_scroll {
+    overflow: hidden;
+}
+.sezioni {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2%;
+    text-align: center;
+
+}
+
+.sezioni section {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    
+}
+
+
+
+.sezioni div{
+    width: 100%;
+    background-color: rgb(233, 233, 233);
+    transition: 0.25s;
+    margin: 2%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.sezioni h3 {
+    text-transform: uppercase;
+}
+
+
+@media (max-width: 500px) {
+    #tasti a{
+        display: none;
+    }
+
+    #menu_icon{
+        width: 20%;
+        height: 100%;
+        padding: auto;
+    }
+    #menu_icon div{
+        display: block;
+        width: 35px;
+        height: 8px;
+        background-color: white;
+        margin: 5px auto;
+        border-radius: 3px;
+    }
+    #intestazione h1 strong{
+        font-size: 35px;
+    }
+
+    #intestazione h1 em{
+        font-size: 25px;
+    }
+
+    .containerForm{
+        width: 95%;
+    }
+
+}
+  

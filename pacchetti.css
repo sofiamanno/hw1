@@ -1,0 +1,69 @@
+#intestazione{
+    height: 70% !important;
+    margin-bottom: 1% !important;
+}
+
+#container section{
+    
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    
+}
+
+
+.info {
+    font-family:'Courier New', Courier, monospace;
+    background-color:rgb(236, 236, 236);
+}
+
+#container button {
+    background: none;
+    text-align: center;
+    border: 2px solid grey;
+    padding: 1.5%;
+    outline: none;
+    color: grey;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+#container button:hover {
+    border: 2px solid black;
+    color: black;
+}
+.utility{
+    display: flex;
+    width: 80%;
+    height: 35%;
+    justify-content: space-around;
+    margin: 1% auto;
+    border-radius: 24px;
+    background-color:whitesmoke ;
+}
+
+.utility img{
+    max-width: 50%;
+    height: 100%;
+}
+
+.hidden {
+    display: none !important;
+
+}
+
+@media (max-width: 500px) {
+  
+    .utility img{
+    
+    max-height: 50%;
+
+    margin-top: auto;
+    margin-bottom: auto;
+    }
+}
+
+
+
+

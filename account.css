@@ -1,0 +1,95 @@
+#intestazione{
+    height: 70% !important;
+}
+
+
+#out{
+  z-index: 1;
+  color: white;
+  text-decoration: none;
+  border: solid white;
+  padding: 1.5%;
+  border-radius: 10px;
+
+
+}
+
+.scelte{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+ 
+}
+
+
+.scelte div{
+    
+    width: 30%;
+    padding: 1%;
+    margin-bottom: 20px;
+    background-color: #f4f4f4;
+    border: solid 1px #dcdcdc;   
+    height: 70%;
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.scelte img{
+    height: 100%;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.scelte p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 120%;
+    padding: 2%;
+    margin-bottom: 0px;
+    color: rgb(95, 95, 95);
+    border: solid rgb(179, 179, 179);
+    padding: 2%;
+    text-align: center;
+    
+}
+
+.scelte p:hover{
+    border-color: black;
+    color: black;
+}
+
+.scelte a{
+    text-decoration: none;
+}
+
+@media (max-width: 500px) {
+    .scelte div{
+        width: 100%;
+        height: 30%;
+        padding: 0%;
+        margin: 0;
+        
+    }
+    .scelte img{
+        height: auto;
+        margin: 0%;
+        width: 60px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    .scelte p{
+        margin: 0%;
+        border: none;
+    }
+    
+}

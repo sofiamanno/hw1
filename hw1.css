@@ -1,0 +1,294 @@
+body{
+    
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    font-size:20px;
+    margin: 0px;
+}
+
+nav {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 30px 20px 10px 20px;
+}
+
+#logo{
+    
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-size: 30px;
+    z-index:1;
+    height: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+
+#tasti a{
+    cursor: pointer;
+    margin: 10px;
+    padding: 14px 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#tasti a:hover{
+    text-decoration: underline;
+}
+
+#intestazione{
+    color:whitesmoke;
+    background-size: cover;
+    background-position: center;
+    height: 100% ;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center; 
+    background-image: url("images/Fichidindia-mare.2.jpg");
+}
+
+#intestazione h1{
+    text-align: center;
+    z-index: 1;
+    top: 150px;
+    color: rgb(207, 207, 207);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 160%;
+}
+
+#intestazione h1 strong{
+    font-size:2em; 
+    font-weight:lighter;
+    border-radius: 20px;
+}
+
+#intestazione h1 em {
+    font-size: 1em;
+    font-style: normal;
+    font-weight: lighter;
+    border-radius: 20px;
+}
+
+#Overlay {
+    position: absolute;
+    background-color: rgba(0,0,0,.5);
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#cerca{
+    
+    color: rgb(207, 207, 207);
+    font-size: 1em;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    z-index: 1;
+    
+}
+#tasti img {
+    width: 30px;
+    height: 25px;
+}
+
+.foto{
+
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.foto div{
+    
+    width: calc(32.5% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #f4f4f4;
+    border: solid 1px #dcdcdc;   
+}
+
+.foto div img{
+    width: 100%;
+}
+
+.foto div img:hover{
+    cursor: pointer;
+}
+
+
+#titolo h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(51, 51, 51);
+    text-align: center;
+
+}
+
+
+.foto{
+    background-color: #dcdcdc;
+    padding: 2%;
+}
+
+.foto p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 120%;
+    padding: 2%;
+    margin-bottom: 0px;
+    color: rgb(95, 95, 95);
+}
+
+#fo{
+    
+    text-align: center;
+    background-color: rgb(179, 179, 179);
+    padding: 3%;
+    color: white;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 2%;
+}
+
+
+#cerca{
+    margin-top: 8%;
+    width: 25%;
+    height: 5%;
+}
+
+#cerca input[type=text]{
+    text-align: center;
+    width: 100%;
+    padding: 2%;
+    border-radius: 3px;
+    border-color: rgb(194, 194, 194);
+    margin-top: -10%;
+    background-color: white;
+    height: 120%;
+    margin-left: -25%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+h6{
+    font-size: large;
+    color: rgb(92, 92, 92);
+    margin: 0;
+}
+
+.menu_mobile{
+    display: none;
+}
+
+
+@media (max-width: 500px) {
+
+    #tasti a{
+        display: none;
+    }
+
+    #menu_icon{
+        width: 20%;
+        height: 100%;
+        padding: auto;
+    }
+    #menu_icon div{
+        display: block;
+        width: 35px;
+        height: 8px;
+        background-color: white;
+        margin: 5px auto;
+        border-radius: 3px;
+    }
+    #intestazione h1 strong{
+        font-size: 35px;
+    }
+
+    #intestazione h1 em{
+        font-size: 25px;
+    }
+
+    #cerca{
+        width: 65%;    
+    }
+
+    .foto div{
+        width: 43%;
+    }
+}
+
+@media (max-width: 500px) {
+    #tasti{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: end;
+        padding: 5%;
+        height: 42px;
+    }
+    #tasti a{
+      display: none;
+    }
+    #menu_icon{
+        width: 20%;
+        height: 100%;
+        margin-top: -20px;
+        padding: auto;
+    }
+    #menu_icon div{
+        display: block;
+        width: 35px;
+        height: 5px;
+        background-color: white;
+        margin: 5px auto;
+        border-radius: 3px;
+        
+    }
+    
+    .menu_mobile{/*può essere aperto solo da mobile*/
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 100%;
+        height: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        transition: 0.2s ease-in-out;
+        z-index: 10;
+    }
+    .menu_mobile.open {
+        
+        height: 70%; /* Altezza finale del menu quando è aperto */
+    }
+    .menu_mobile a{
+        display: none;
+    }
+    .menu_mobile.open a{
+        display: block;
+        font-size: 30px;
+        letter-spacing: 2px;
+        color: white;
+        text-decoration: none;
+        
+    }
+    .menu_mobile img{
+        height: 40px;
+        width: auto;
+
+    }
+  
+}
